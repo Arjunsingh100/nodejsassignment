@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+</head>
+<body>
+    <h2>Welcome <%=item.name%>, this is your details</h2>
+    <%- include('./common/header')%>
+    <h1>Hello This is <%= item.name %></h1>
+    <h2>Username:<%= item.name %></h2>
+    <h3>Email:<%= item.email %></h3>
+    <h3>Phone:<%= item.phone %></h3>
+    <ul>
+        <%
+        item.skills.forEach((ele)=>{%>
+            <li style="list-style-type: none;"><%= ele%></li>
+            <%})
+        %>
+    </ul>
+</body>
+</html>
+ 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hey, you are here</h2>
+</body>
+</html> -->
